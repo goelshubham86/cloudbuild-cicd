@@ -9,6 +9,7 @@ client = bigquery.Client()
 @app.route('/')
 def main(big_query_client=client):
     table_id = "charles-schwab-poc-465918.test_schema.us_states"
+    print(f"Loading data into {table_id}")
     job_config = bigquery.LoadJobConfig(
         write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
         source_format=bigquery.SourceFormat.CSV,
