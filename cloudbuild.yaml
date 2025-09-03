@@ -24,7 +24,7 @@ steps:
    - 'us-central1'
    - '--allow-unauthenticated'
    - '--service-account'
-   - 'cloud-build@charles-schwab-poc-465918.iam.gserviceaccount.com'
+   - 'mlops-453@charles-schwab-poc-465918.iam.gserviceaccount.com'
 images:
 - 'us-central1-docker.pkg.dev/charles-schwab-poc-465918/python-apps/demo-flask-app:$COMMIT_SHA'
 
